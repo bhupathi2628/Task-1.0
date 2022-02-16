@@ -5,6 +5,9 @@ pipeline {
         stage('Build') {
           steps {
             sh 'echo "building the repo"'
+            sh 'pip3 install flask'
+            sh 'pip3 install flask_restful'
+            sh 'pip3 install xmlrunner'
           }
         }
 
